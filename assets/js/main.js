@@ -258,3 +258,23 @@ $(function () {
         }
     });
 });
+
+const buyBtns = document.querySelectorAll('.js-cart')
+const modal =  document.querySelector('.plus-modal') 
+const modalClose = document.querySelector('.modal-close')
+function showBuyModal() {
+    modal.classList.add('open')
+}
+
+function hideBuyModal() {
+    modal.classList.remove('open')
+}
+
+for (const buyBtn of buyBtns) {
+    buyBtn.addEventListener('click',showBuyModal )
+
+}
+
+modalClose.addEventListener('click', hideBuyModal)
+
+modal.addEventListener('click', hideBuyModal)

@@ -19,72 +19,6 @@
     <!-- =========================
         Header
     =========================== -->
-    <header id="header" class="header header-transparent header-layout4">
-      <nav class="navbar navbar-expand-lg sticky-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button">
-            <span class="menu-lines"><span></span></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav__item with-dropdown">
-                <a href="#" class="dropdown-toggle nav__item-link active ">Trang chủ</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Thông tin</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="our-story.html" class="nav__item-link">Về chúng tôi</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="our-chefs.html" class="nav__item-link">Đầu bếp</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="our-guestbook.html" class="nav__item-link">Sổ tay KH</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="contacts.html" class="nav__item-link">Liên Hệ</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="events.html" class="nav__item-link">Sự kiện</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="event-single.html" class="nav__item-link">Sự kiện đặc biệt</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="faqs.html" class="nav__item-link">FAQs</a></li> <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="menu-board.html" class="dropdown-toggle nav__item-link">Thực Đơn</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="gallery-grid.html" class="dropdown-toggle nav__item-link">Thư Viện</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="blog-standard.html" class="dropdown-toggle nav__item-link">Bài viết</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Mua hàng</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="shop.html" class="nav__item-link">Sản phẩm</a></li>
-                  <!-- /.nav-item -->
-
-
-                  <li class="nav__item"><a href="shopping-cart.html" class="nav__item-link">Thanh toán</a></li>
-                  <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <!-- /.nav-item -->
-            </ul><!-- /.navbar-nav -->
-          </div><!-- /.navbar-collapse -->
-          <div class="navbar-actions-wrap">
-            <div class="navbar-actions d-flex align-items-center">
-              <a href="#" class="navbar__action-btn search-popup-trigger"><i class="fa fa-search"></i></a>
-
-            </div><!-- /.navbar-actions -->
-          </div><!-- /.navbar-actions-wrap -->
-        </div><!-- /.container -->
-      </nav><!-- /.navabr -->
-    </header><!-- /.Header -->
-
     <!-- ========================
        page title 
     =========================== -->
@@ -182,7 +116,7 @@
                           </form>
                           <div>
                             <a class="btn btn__secondary mr-10" href="#">update cart</a>
-                            <a class="btn btn__primary" href="#">Checkout</a>
+                            <a class="btn btn__primary js-cart" href="#">Checkout</a>
                           </div>
                         </div><!-- /.col-lg-2  -->
                       </div><!-- /.row  -->
@@ -529,6 +463,9 @@
       </div><!-- /.container -->
     </section><!-- /.shopping-cart -->
 
+    <!-- The Modal -->
+
+
     <!-- ========================
       Footer
     ========================== -->
@@ -628,6 +565,19 @@
 
   </div>
   <!-- /.wrapper -->
+  
+  <div class="plus-modal open">
+    <div class="plus-modal-container">
+      <header class="plus-modal__header">
+        <h4>Thanh toán thành công</h4>
+      </header>
+
+      <div class = "modal-close"> Tiêp tục mua hàng </div>
+
+      
+    </div>
+
+  </div>
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
