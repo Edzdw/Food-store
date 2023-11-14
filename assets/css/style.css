@@ -1973,6 +1973,19 @@ textarea.form-control {
   position: relative;
 }
 
+img.logo-light {
+  width: 40%;
+}
+
+img.logo-dark {
+  width: 40%;
+}
+
+img.footer__logo {
+  width: 15%;
+  margin-bottom: 15px;
+}
+
 .navbar .navbar-toggler .menu-lines {
   display: inline-block;
 }
