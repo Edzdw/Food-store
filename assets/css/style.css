@@ -48,9 +48,10 @@
 /*--------------------------
       Global Styles
 ---------------------------*/
+
+
 body {
   background-color: #ffffff;
-  font-family: "Rubik", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #9b9b9b;
@@ -1033,7 +1034,7 @@ h4,
 h5,
 h6 {
   color: #282828;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   text-transform: capitalize;
